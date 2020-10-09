@@ -138,10 +138,13 @@
 
 .animation{
     margin: 0px;
-    width: 300px;
-    height: 550px;
+    width: 280px;
+    height: 560px;
     border-radius: 15px;
-    background-color: #d0d0d0;
+    background-color: $d-background;
+    &.light{
+        background-color: $l-navbar;
+    }
 }
 
 .expo{

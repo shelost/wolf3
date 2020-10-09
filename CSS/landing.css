@@ -181,10 +181,14 @@
 
 .animation {
   margin: 0px;
-  width: 300px;
-  height: 550px;
+  width: 280px;
+  height: 560px;
   border-radius: 15px;
-  background-color: #d0d0d0;
+  background-color: #0C1323;
+}
+
+.animation.light {
+  background-color: #EFF2FF;
 }
 
 .expo {
