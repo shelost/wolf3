@@ -3,6 +3,9 @@
 .avatars{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
 
@@ -28,14 +31,19 @@
         &.analyst{
             border: 1px solid rgba($red, 0.5);
         }
+        &.pending{
+            opacity: 0.3;
+        }
     }
     h1{
-        font-size: $subtitle;
+        font-size: $paragraph;
+        line-height: $subtitle;
         font-weight: 600;
         margin-bottom: 10px;
     }
     h2{
         font-size: $small;
+        line-height: $paragraph;
         font-weight: 400;
         color: rgba(white, 0.5);
     }

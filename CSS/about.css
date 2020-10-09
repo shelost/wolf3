@@ -5,6 +5,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .avatar {
@@ -37,14 +41,20 @@
   border: 1px solid rgba(255, 0, 0, 0.5);
 }
 
+.avatar img.pending {
+  opacity: 0.3;
+}
+
 .avatar h1 {
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .avatar h2 {
   font-size: 15px;
+  line-height: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
 }
