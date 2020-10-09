@@ -141,6 +141,15 @@ const LandingLoop = () => {
 }
 window.requestAnimationFrame(LandingLoop)
 
+var analysisAnim = lottie.loadAnimation({
+    container: Id('analysis'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: '../JS/JSON/analysis.json',
+    name: 'analysis'
+});
+
 
 /*
 const LandingLoop = () => {
