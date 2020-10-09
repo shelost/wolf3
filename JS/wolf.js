@@ -161,9 +161,9 @@ const loop = () => {
       if (window.innerWidth < 800){
 
         if (up){
-            FYS -= 0.03;
+            FYS -= 0.015;
         }else{
-            FYS += 0.03;
+            FYS += 0.015;
         }
 
         FY += FYS;
