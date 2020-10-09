@@ -1,0 +1,121 @@
+body {
+  background: #00041C;
+  color: white;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-family: Poppins, sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  font-family: Poppins, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 3;
+  background: black;
+}
+
+#navbar #mast {
+  height: 100%;
+  margin-left: 15px;
+}
+
+#navbar #mast svg {
+  height: 60px;
+  width: 120px;
+  fill: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#navbar #mast svg:hover {
+  fill: #FFCE00;
+}
+
+#navbar #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#navbar #nav .navbtn {
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#navbar #nav .navbtn:hover {
+  color: #FFCE00;
+}
+
+#navbar #nav .button {
+  background: #FFCE00;
+  border-radius: 10px;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#navbar #nav .button:hover {
+  background: #ffb515;
+}
+/*# sourceMappingURL=style.css.map */

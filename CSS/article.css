@@ -1,0 +1,68 @@
+body {
+  background: #EFF2FF;
+  overflow-x: hidden;
+}
+
+.main {
+  background-color: #EFF2FF;
+}
+
+.banner {
+  width: 100vw;
+  height: 30vw;
+  background-color: white;
+  background-size: cover;
+  margin: 0;
+  background-attachment: fixed;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: -1;
+}
+
+.article {
+  background: #EFF2FF;
+  color: black;
+  margin-top: 30vw;
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding-bottom: 50px;
+}
+
+.header {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.header h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  max-width: 1200px;
+  color: black;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=article.css.map */

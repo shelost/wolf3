@@ -1,0 +1,132 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  background: #eff2ff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  border: 2px solid rgba(239, 242, 255, 0);
+  width: 800px;
+  margin-bottom: 10px;
+}
+
+input:hover {
+  border: 2px solid #0076FF;
+}
+
+textarea {
+  background: #eff2ff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  border: 2px solid rgba(239, 242, 255, 0);
+  width: 800px;
+  height: 200px;
+  resize: vertical;
+}
+
+textarea:hover {
+  border: 2px solid #0076FF;
+}
+
+button {
+  background: #0076FF;
+  border-radius: 12px;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0051ff;
+}
+
+button svg {
+  height: 100%;
+}
+
+button svg polyline {
+  height: 100%;
+  stroke: white;
+  fill: none;
+  stroke-width: 3px;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.link {
+  border: 3px solid #0076FF;
+  border-radius: 12px;
+  padding: 6px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 500;
+  font-size: 25px;
+  color: #3391ff;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.link:hover {
+  border: 3px solid #0051ff;
+  color: #0076FF;
+}
+
+.link svg {
+  height: 100%;
+}
+
+.link svg polyline {
+  height: 100%;
+  stroke: white;
+  fill: none;
+  stroke-width: 3px;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.text {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 50px;
+}
+/*# sourceMappingURL=contact.css.map */

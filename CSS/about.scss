@@ -1,0 +1,64 @@
+@import 'variables';
+
+.avatars{
+    display: flex;
+    justify-content: center;
+}
+
+
+.avatar{
+    width: 200px;
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    img{
+        width: 100%;
+        background: rgba(black, 0.5);
+        border-radius: 40px;
+        &.board{
+            border: 1px solid rgba($gold, 0.4);
+        }
+        &.dev{
+            border: 1px solid rgba($purple, 0.4);
+        }
+        &.design{
+            border: 1px solid rgba($green, 0.4);
+        }
+        &.analyst{
+            border: 1px solid rgba($red, 0.5);
+        }
+    }
+    h1{
+        font-size: $subtitle;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: $small;
+        font-weight: 400;
+        color: rgba(white, 0.5);
+    }
+}
+
+.main{
+    margin-top: 100px;
+}
+
+.text{
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 70px;
+    img{
+        width: 80%;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 18px;
+        color: rgba(white, 0.7);
+    }
+}

@@ -1,0 +1,109 @@
+@import 'variables';
+
+body{
+    background: $background;
+    color: white;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+input{
+    outline: none;
+    border: none;
+    font-family: Poppins, sans-serif;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+textarea{
+    outline: none;
+    border: none;
+    font-family: Poppins, sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(white, 0.4);
+}
+
+.button{
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 60px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    z-index: 3;
+    background: black;
+
+    #mast{
+        height: 100%;
+        margin-left: 15px;
+        svg{
+            height: 60px;
+            width: 120px;
+            fill: white;
+            transition: 0.2s ease;
+            &:hover{
+                fill: $gold;
+            }
+        }
+    }
+
+    #nav{
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .navbtn{
+            font-weight: 500;
+            font-size: $paragraph;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: 0.2s ease;
+            &:hover{
+                color: $gold;
+            }
+        }
+
+        .button{
+
+            background: $gold;
+            border-radius: 10px;
+            padding: 3px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-weight: 600;
+            font-size: $paragraph;
+            color: black;
+            transition: 0.2s ease;
+
+            &:hover{
+                background: $gold2;
+            }
+        }
+    }
+}
