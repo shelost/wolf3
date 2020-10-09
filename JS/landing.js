@@ -71,7 +71,7 @@ var analysisAnim = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    path: '../JS/JSON/analysis.json',
+    path: './JS/JSON/analysis.json',
     name: 'analysis'
 });
 
