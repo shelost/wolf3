@@ -21,7 +21,7 @@
   .avatar img {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 40px;
+    border-radius: 20px;
   }
   .avatar img.board {
     border: 1px solid rgba(255, 206, 0, 0.4);
@@ -87,15 +87,15 @@
   }
   .avatar {
     width: 200px;
-    margin: 30px;
+    margin: 15px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
   }
   .avatar img {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 40px;
+    border-radius: 20px;
   }
   .avatar img.board {
     border: 1px solid rgba(255, 206, 0, 0.4);

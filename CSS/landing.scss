@@ -7,12 +7,10 @@
 
 @media screen and (min-width: 800px){
 
-
     #wolf{
         width: 400px;
         height: 500px;
     }
-
 
     *{
         scroll-behavior: smooth;
@@ -85,7 +83,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         transition: 0.3s ease;
         position: sticky;
@@ -116,6 +114,7 @@
 
     .flagship{
         width: 700px;
+        max-width: 40vw;
 
         h1{
             font-size: $header;
@@ -154,6 +153,7 @@
     .expo{
         width: 500px;
         margin: 50px;
+        max-width: 40vw;
         h1{
             font-size: $header;
             line-height: calc(#{$header} + 5px);
