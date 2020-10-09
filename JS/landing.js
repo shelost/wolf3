@@ -66,6 +66,17 @@ Tag('body')[0].innerHTML = Nav + Tag('body')[0].innerHTML
 
 Class('content')[0].innerHTML = Class('content')[0].innerHTML + Wolf;
 
+var analysisAnim = lottie.loadAnimation({
+    container: Id('analysis'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: '../JS/JSON/analysis.json',
+    name: 'analysis'
+});
+
+analysisAnim.goToAndPlay(1, true)
+
 let index, integer;
 
 const LandingLoop = () => {
@@ -141,14 +152,7 @@ const LandingLoop = () => {
 }
 window.requestAnimationFrame(LandingLoop)
 
-var analysisAnim = lottie.loadAnimation({
-    container: Id('analysis'),
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: '../JS/JSON/analysis.json',
-    name: 'analysis'
-});
+
 
 
 /*
