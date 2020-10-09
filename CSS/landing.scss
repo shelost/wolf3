@@ -4,158 +4,307 @@
     display: none;
 }
 
-#wolf{
-    width: 400px;
-    height: 500px;
-}
+
+@media screen and (min-width: 800px){
 
 
-*{
-    scroll-behavior: smooth;
-}
-
-#pointer{
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    bottom: 50px;
-    left: calc(50vw  - 25px);
-    z-index: 3;
-    animation: bounce infinite 0.8s alternate ease-in-out;
-    svg{
-        height: 100%;
-        width: 100%;
-        polyline{
-            height: 100px;
-            stroke: white;
-            opacity: 0.5;
-            stroke-width: 1px;
-            stroke-linecap: round;
-            fill: none;
-        }
-
+    #wolf{
+        width: 400px;
+        height: 500px;
     }
-}
 
-#dots{
-    position: fixed;
-    right: 20px;
-    top: calc(50vh);
-    z-index: 3;
-    height: 120px;
-    width: 30px;
-    display: flex;
-    visibility: hidden;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 50px;
-    align-items: center;
-    background-color: white;
-    transition: 0.2s ease;
-    opacity: 0;
-    .dot{
-        width: 12px;
-        height: 12px;
+
+    *{
+        scroll-behavior: smooth;
+    }
+
+    #pointer{
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 50px;
+        left: calc(50vw  - 25px);
+        z-index: 3;
+        animation: bounce infinite 0.8s alternate ease-in-out;
+        svg{
+            height: 100%;
+            width: 100%;
+            polyline{
+                height: 100px;
+                stroke: white;
+                opacity: 0.5;
+                stroke-width: 1px;
+                stroke-linecap: round;
+                fill: none;
+            }
+
+        }
+    }
+
+    #dots{
+        position: fixed;
+        right: 20px;
+        top: calc(50vh);
+        z-index: 3;
+        height: 120px;
+        width: 30px;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: space-evenly;
         border-radius: 50px;
-        background-color: #a0a0a0;
-        &.active{
-            background-color: $gold;
-        }
-    }
-    &.active{
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@keyframes bounce{
-    from{
-        transform: translateY(0) rotate(90deg);
-    }
-    to{
-        transform: translateY(15px) rotate(90deg);
-    }
-}
-
-.slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    transition: 0.3s ease;
-    position: sticky;
-    top: -10px;
-    background: $d-background;
-
-    &.light{
-        background: $l-navbar;
-        color: black;
-    }
-
-    &.right{
-        text-align: right;
-    }
-
-    &.gone{
-        opacity: 0.2;
-        transform: translateY(-300px);
-    }
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-}
-
-.flagship{
-    width: 700px;
-
-    h1{
-        font-size: $header;
-        line-height: calc(#{$header} + 10px);
-    }
-    .button{
-
-        background: $gold;
-        border-radius: 12px;
-        padding: 5px;
-        width: fit-content;
-        padding-left: 30px;
-        padding-right: 33px;
-        font-weight: 600;
-        font-size: $subtitle;
-        color: black;
+        align-items: center;
+        background-color: white;
         transition: 0.2s ease;
-
-        &:hover{
-            background: $gold2;
+        opacity: 0;
+        .dot{
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            background-color: #a0a0a0;
+            &.active{
+                background-color: $gold;
+            }
+        }
+        &.active{
+            opacity: 1;
+            visibility: visible;
         }
     }
-}
 
-.animation{
-    margin: 0px;
-    width: 280px;
-    height: 560px;
-    border-radius: 15px;
-    background-color: $d-background;
-    &.light{
-        background-color: $l-navbar;
-    }
-}
-
-.expo{
-    width: 500px;
-    margin: 50px;
-    h1{
-        font-size: $header;
-        line-height: calc(#{$header} + 5px);
-        .italic{
-            font-style: italic;
+    @keyframes bounce{
+        from{
+            transform: translateY(0) rotate(90deg);
         }
+        to{
+            transform: translateY(15px) rotate(90deg);
+        }
+    }
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s ease;
+        position: sticky;
+        top: -10px;
+        background: $d-background;
+
+        &.light{
+            background: $l-navbar;
+            color: black;
+        }
+
+        &.right{
+            text-align: right;
+        }
+
+        &.gone{
+            opacity: 0.2;
+            transform: translateY(-300px);
+        }
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+    }
+
+    .flagship{
+        width: 700px;
+
+        h1{
+            font-size: $header;
+            line-height: calc(#{$header} + 10px);
+        }
+        .button{
+
+            background: $gold;
+            border-radius: 12px;
+            padding: 5px;
+            width: fit-content;
+            padding-left: 30px;
+            padding-right: 33px;
+            font-weight: 600;
+            font-size: $subtitle;
+            color: black;
+            transition: 0.2s ease;
+
+            &:hover{
+                background: $gold2;
+            }
+        }
+    }
+
+    .animation{
+        margin: 0px;
+        width: 280px;
+        height: 560px;
+        border-radius: 15px;
+        background-color: $d-background;
+        &.light{
+            background-color: $l-navbar;
+        }
+    }
+
+    .expo{
+        width: 500px;
+        margin: 50px;
+        h1{
+            font-size: $header;
+            line-height: calc(#{$header} + 5px);
+            .italic{
+                font-style: italic;
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+
+    #wolf{
+        width: 40vh;
+        height: 40vh;
+    }
+
+    *{
+        scroll-behavior: smooth;
+    }
+
+    #pointer{
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 50px;
+        left: calc(50vw  - 25px);
+        z-index: 3;
+        animation: bounce infinite 0.8s alternate ease-in-out;
+        svg{
+            height: 100%;
+            width: 100%;
+            polyline{
+                height: 100px;
+                stroke: white;
+                opacity: 0.5;
+                stroke-width: 1px;
+                stroke-linecap: round;
+                fill: none;
+            }
+
+        }
+    }
+
+    @keyframes bounce{
+        from{
+            transform: translateY(0) rotate(90deg);
+        }
+        to{
+            transform: translateY(15px) rotate(90deg);
+        }
+    }
+
+    .slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 98vh;
+        transition: 0.3s ease;
+        position: sticky;
+        top: -10px;
+        background: $background;
+
+        &.light{
+            background: $l-navbar;
+            color: black;
+        }
+
+        &.right{
+            text-align: right;
+        }
+
+        &.gone{
+            opacity: 0.2;
+            transform: translateY(-300px);
+        }
+
+        &.first{
+            margin-top: 60px;
+        }
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .flagship{
+        width: 100%;
+        h1{
+            font-size: calc(#{$title}*0.8);
+            line-height: calc(#{$title});
+        }
+        .button{
+
+            background: $gold;
+            border-radius: 12px;
+            padding: 5px;
+            width: fit-content;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 700;
+            font-size: $paragraph;
+            color: black;
+            transition: 0.2s ease;
+
+            &:hover{
+                background: $gold2;
+            }
+        }
+    }
+
+    .animation{
+        margin: 0px;
+        width: 25vh;
+        height: 50vh;
+        border-radius: 10px;
+        background-color: $d-background;
+        &.light{
+            background-color: $l-navbar;
+        }
+    }
+
+
+    .expo{
+        text-align: center;
+        h1{
+            font-size: $title;
+            line-height: calc(#{$title} + 5px);
+            .italic{
+                font-style: italic;
+            }
+            margin-bottom: 0;
+        }
+        p{
+            margin: auto;
+            font-size: $small;
+            opacity: 0.7;
+            margin-top: 10px;
+            width: 80%;
+        }
+
     }
 
 }

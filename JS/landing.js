@@ -148,6 +148,40 @@ const LandingLoop = () => {
     }
 
 
+    // Mobile
+
+    if (window.innerWidth < 800){
+
+        Id('wolf').style.transform = `translateY(-${Class('flagship')[0].getBoundingClientRect().height+20}px)`
+        Class('flagship')[0].style.transform = `translateY(${Id('wolf').getBoundingClientRect().height-20}px)`
+
+        for (let i=0; i<Class('right').length; i++){
+            let slide = Class('right')[i]
+            let content = slide.firstElementChild
+            let expo = content.firstElementChild
+            let anim = content.lastElementChild
+
+            expo.style.transform = `translateY(${anim.getBoundingClientRect().height}px)`
+            anim.style.transform = `translateY(-${expo.getBoundingClientRect().height}px)`
+        }
+
+    }else{
+
+        Id('wolf').style.transform = ``
+        Class('flagship')[0].style.transform = ``
+
+        for (let i=0; i<Class('right').length; i++){
+            let slide = Class('right')[i]
+            let content = slide.firstElementChild
+            let expo = content.firstElementChild
+            let anim = content.lastElementChild
+
+            expo.style.transform = ``
+            anim.style.transform = ``
+        }
+    }
+
+
     window.requestAnimationFrame(LandingLoop)
 }
 window.requestAnimationFrame(LandingLoop)
