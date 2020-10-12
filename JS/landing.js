@@ -75,7 +75,24 @@ var analysisAnim = lottie.loadAnimation({
     name: 'analysis'
 });
 
-analysisAnim.goToAndPlay(1, true)
+var academyAnim = lottie.loadAnimation({
+    container: Id('academy'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: './JS/JSON/academy.json',
+    name: 'academy'
+});
+
+var portfolioAnim = lottie.loadAnimation({
+    container: Id('portfolio'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: './JS/JSON/portfolio.json',
+    name: 'portfolio'
+});
+
 
 let index, integer;
 
