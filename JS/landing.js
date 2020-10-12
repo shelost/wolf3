@@ -93,6 +93,15 @@ var portfolioAnim = lottie.loadAnimation({
     name: 'portfolio'
 });
 
+var wolfpackAnim = lottie.loadAnimation({
+    container: Id('wolfpack'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: './JS/JSON/wolfpack.json',
+    name: 'wolfpack'
+});
+
 
 let index, integer;
 
