@@ -110,6 +110,148 @@ textarea{
             }
         }
     }
+
+    #modal{
+        position: fixed;
+        width: 50vw;
+        height: 50vh;
+        background-color: black;
+        border: 2px solid $gold;
+        border-radius: 20px;
+        bottom: -55vh;
+        left: 25vw;
+        z-index: 5;
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+        &.active{
+            bottom: 25vh;
+        }
+
+        .container{
+            width: 100%;
+            opacity: 0;
+            transition: 0.2s ease;
+            display: none;
+            flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            &.visible{
+                display: flex;
+                opacity: 1;
+            }
+        }
+
+        h1{
+            font-size: $title;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+        }
+        h2{
+            font-size: $subtitle;
+            font-weight: 500;
+            margin: 0;
+            text-align: center;
+            color: white;
+        }
+
+        .horflex{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        #email{
+            background: rgba($l-navbar, 1);
+            font-size: 18px;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px;
+            transition: 0.2s ease;
+            border: 2px solid rgba($l-navbar, 0);
+            width: 60%;
+            &:hover{
+                border: 2px solid $blue;
+            }
+        }
+
+        #beta{
+            background: $blue;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 15px;
+            margin: 0;
+            padding-right: 15px;
+            flex-grow: stretch;
+            font-weight: 600;
+            font-size: $subtitle;
+            color: white;
+            transition: 0.2s ease;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+                background: $blue2;
+            }
+            svg{
+                height: 20px;
+                width: 20px;
+                polyline{
+                    transform: translateX(-3px);
+                    height: 100%;
+                    width: 100%;
+                    stroke: white;
+                    fill: none;
+                    stroke-width: 3px;
+                }
+            }
+        }
+
+        #ok{
+            background: $blue;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 15px;
+            margin: auto;
+            margin-top: 30px;
+            padding-right: 15px;
+            flex-grow: stretch;
+            font-weight: 600;
+            font-size: $subtitle;
+            color: white;
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:hover{
+                background: $blue2;
+            }
+        }
+    }
+
+    #dark{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(black, 0.5);
+        z-index: 4;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease;
+        &.active{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
 
 
@@ -231,4 +373,148 @@ textarea{
         }
     }
 
+    #modal{
+        position: fixed;
+        width: 80vw;
+        height: 50vh;
+        background-color: black;
+        border: 2px solid $gold;
+        border-radius: 20px;
+        bottom: -55vh;
+        left: 10vw;
+        z-index: 5;
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+        &.active{
+            bottom: 25vh;
+        }
+
+        .container{
+            width: 100%;
+            opacity: 0;
+            transition: 0.2s ease;
+            display: none;
+            flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            &.visible{
+                display: flex;
+                opacity: 1;
+            }
+        }
+
+        h1{
+            font-size: $subtitle;
+            line-height: calc(#{$subtitle} + 5px);
+            font-weight: 700;
+            text-align: center;
+            width: 90%;
+            color: white;
+        }
+        h2{
+            font-size: $paragraph;
+            font-weight: 500;
+            margin: 0;
+            text-align: center;
+            width: 90%;
+            color: white;
+        }
+
+        .horflex{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        #email{
+            background: rgba($l-navbar, 1);
+            font-size: 18px;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px;
+            transition: 0.2s ease;
+            border: 2px solid rgba($l-navbar, 0);
+            width: 60%;
+            &:hover{
+                border: 2px solid $blue;
+            }
+        }
+
+        #beta{
+            background: $blue;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 15px;
+            margin: 0;
+            padding-right: 15px;
+            flex-grow: stretch;
+            font-weight: 600;
+            font-size: $subtitle;
+            color: white;
+            transition: 0.2s ease;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+                background: $blue2;
+            }
+            svg{
+                height: 20px;
+                width: 20px;
+                polyline{
+                    transform: translateX(-3px);
+                    height: 100%;
+                    width: 100%;
+                    stroke: white;
+                    fill: none;
+                    stroke-width: 3px;
+                }
+            }
+        }
+
+        #ok{
+            background: $blue;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 10px;
+            padding-left: 15px;
+            margin: auto;
+            margin-top: 30px;
+            padding-right: 15px;
+            flex-grow: stretch;
+            font-weight: 600;
+            font-size: $paragraph;
+            color: white;
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:hover{
+                background: $blue2;
+            }
+        }
+    }
 }
+
+.fail{
+    animation: slide 0.4s;
+    border-color:red !important;
+}
+
+@keyframes slide{
+    0%{ transform: translateX(-0.5vw) }
+    20%{ transform: translateX(0.5vw) }
+    40%{ transform: translateX(-0.5vw) }
+    60%{ transform: translateX(0.5vw) }
+    80%{ transform: translateX(-0.5vw) }
+    100%{ transform: translateX(0vw) }
+}
+
+
+

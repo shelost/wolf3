@@ -112,6 +112,178 @@ textarea {
   #navbar #nav .button:hover {
     background: #ffb515;
   }
+  #modal {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    border: 2px solid #FFCE00;
+    border-radius: 20px;
+    bottom: -55vh;
+    left: 25vw;
+    z-index: 5;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  #modal.active {
+    bottom: 25vh;
+  }
+  #modal .container {
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #modal .container.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+  }
+  #modal h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+  #modal h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+  }
+  #modal .horflex {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  #modal #email {
+    background: #eff2ff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border: 2px solid rgba(239, 242, 255, 0);
+    width: 60%;
+  }
+  #modal #email:hover {
+    border: 2px solid #0076FF;
+  }
+  #modal #beta {
+    background: #0076FF;
+    border-radius: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 0;
+    padding-right: 15px;
+    -webkit-box-flex: stretch;
+        -ms-flex-positive: stretch;
+            flex-grow: stretch;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #modal #beta:hover {
+    background: #0051ff;
+  }
+  #modal #beta svg {
+    height: 20px;
+    width: 20px;
+  }
+  #modal #beta svg polyline {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+    height: 100%;
+    width: 100%;
+    stroke: white;
+    fill: none;
+    stroke-width: 3px;
+  }
+  #modal #ok {
+    background: #0076FF;
+    border-radius: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 15px;
+    margin: auto;
+    margin-top: 30px;
+    padding-right: 15px;
+    -webkit-box-flex: stretch;
+        -ms-flex-positive: stretch;
+            flex-grow: stretch;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  #modal #ok:hover {
+    background: #0051ff;
+  }
+  #dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  #dark.active {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -244,6 +416,224 @@ textarea {
   }
   #nav .button:hover {
     background: #ffb515;
+  }
+  #modal {
+    position: fixed;
+    width: 80vw;
+    height: 50vh;
+    background-color: black;
+    border: 2px solid #FFCE00;
+    border-radius: 20px;
+    bottom: -55vh;
+    left: 10vw;
+    z-index: 5;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  #modal.active {
+    bottom: 25vh;
+  }
+  #modal .container {
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #modal .container.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+  }
+  #modal h1 {
+    font-size: 25px;
+    line-height: calc(25px + 5px);
+    font-weight: 700;
+    text-align: center;
+    width: 90%;
+    color: white;
+  }
+  #modal h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+    color: white;
+  }
+  #modal .horflex {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  #modal #email {
+    background: #eff2ff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border: 2px solid rgba(239, 242, 255, 0);
+    width: 60%;
+  }
+  #modal #email:hover {
+    border: 2px solid #0076FF;
+  }
+  #modal #beta {
+    background: #0076FF;
+    border-radius: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 0;
+    padding-right: 15px;
+    -webkit-box-flex: stretch;
+        -ms-flex-positive: stretch;
+            flex-grow: stretch;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #modal #beta:hover {
+    background: #0051ff;
+  }
+  #modal #beta svg {
+    height: 20px;
+    width: 20px;
+  }
+  #modal #beta svg polyline {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+    height: 100%;
+    width: 100%;
+    stroke: white;
+    fill: none;
+    stroke-width: 3px;
+  }
+  #modal #ok {
+    background: #0076FF;
+    border-radius: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 15px;
+    margin: auto;
+    margin-top: 30px;
+    padding-right: 15px;
+    -webkit-box-flex: stretch;
+        -ms-flex-positive: stretch;
+            flex-grow: stretch;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  #modal #ok:hover {
+    background: #0051ff;
+  }
+}
+
+.fail {
+  -webkit-animation: slide 0.4s;
+          animation: slide 0.4s;
+  border-color: red !important;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(-0.5vw);
+            transform: translateX(-0.5vw);
+  }
+  20% {
+    -webkit-transform: translateX(0.5vw);
+            transform: translateX(0.5vw);
+  }
+  40% {
+    -webkit-transform: translateX(-0.5vw);
+            transform: translateX(-0.5vw);
+  }
+  60% {
+    -webkit-transform: translateX(0.5vw);
+            transform: translateX(0.5vw);
+  }
+  80% {
+    -webkit-transform: translateX(-0.5vw);
+            transform: translateX(-0.5vw);
+  }
+  100% {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(-0.5vw);
+            transform: translateX(-0.5vw);
+  }
+  20% {
+    -webkit-transform: translateX(0.5vw);
+            transform: translateX(0.5vw);
+  }
+  40% {
+    -webkit-transform: translateX(-0.5vw);
+            transform: translateX(-0.5vw);
+  }
+  60% {
+    -webkit-transform: translateX(0.5vw);
+            transform: translateX(0.5vw);
+  }
+  80% {
+    -webkit-transform: translateX(-0.5vw);
+            transform: translateX(-0.5vw);
+  }
+  100% {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,8 +23,7 @@ form {
     width: 800px;
     margin-bottom: 10px;
   }
-  s
-input:hover {
+  input:hover {
     border: 2px solid #0076FF;
   }
   textarea {

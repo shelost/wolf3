@@ -38,7 +38,7 @@ let Nav = `
             <h1 class = 'navbtn'> Contact </h1>
         </a>
         <a href = '#'>
-           <h1 class = 'button'> Try Wolf </h1>
+           <h1 class = 'button trywolf'> Try Wolf </h1>
         </a>
     </div>
 
@@ -50,7 +50,33 @@ let Nav = `
     <div></div>
 </div>
 
-<div id = 'dark' class = 'dorm'> </div>
+<div id = 'dark'> </div>
+
+<div id = 'modal'>
+
+    <div class = 'container visible'>
+        <h1> Try Wolf Today </h1>
+        <div class = 'horflex'>
+            <input type = 'email' id = 'email' placeholder = 'EMAIL' aria-label = "email">
+            <button id = 'beta'>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.6px"
+                height="13px" viewBox="0 0 14.6 13" style="overflow:visible;enable-background:new 0 0 14.6 13;" xml:space="preserve">
+                    <g id = 'arrow'>
+                        <line x1="0.5" y1="6.5" x2="13.9" y2="6.5"/>
+                        <polyline points="8,0.5 14.1,6.6 8.3,12.5 	"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class = 'container'>
+        <h1> You've been signed up! </h1>
+        <h2> Check your email for updates. </h2>
+        <button id = 'ok'> OK </button>
+    </div>
+
+</div>
 
 `
 
