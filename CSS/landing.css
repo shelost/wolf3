@@ -2,6 +2,30 @@
   display: none;
 }
 
+#wolf .st0 {
+  fill: #0286FF;
+}
+
+#wolf .st1 {
+  fill: #424555;
+}
+
+#wolf .st2 {
+  fill: #323545;
+}
+
+#wolf .st3 {
+  fill: #1C2232;
+}
+
+#wolf .st4 {
+  fill: #0E1625;
+}
+
+#wolf .st5 {
+  fill: #030303;
+}
+
 @media screen and (min-width: 800px) {
   #wolf {
     width: 400px;
@@ -92,37 +116,6 @@
               transform: translateY(15px) rotate(90deg);
     }
   }
-  .slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100vw;
-    height: 100vh;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-    position: -webkit-sticky;
-    position: sticky;
-    top: -10px;
-    background: #00041C;
-  }
-  .slide.light {
-    background: #EFF2FF;
-    color: black;
-  }
-  .slide.right {
-    text-align: right;
-  }
-  .slide.gone {
-    opacity: 0.2;
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
-  }
   .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -175,13 +168,75 @@
     width: 500px;
     margin: 50px;
     max-width: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .expo h1 {
     font-size: 50px;
     line-height: calc(50px + 5px);
+    margin: 0;
   }
   .expo h1 .italic {
     font-style: italic;
+  }
+  .expo .button {
+    background: #0076FF;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .expo .button:hover {
+    background: #0051ff;
+  }
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -10px;
+    background: #00041C;
+  }
+  .slide.light {
+    background: #EFF2FF;
+    color: black;
+  }
+  .slide.right {
+    text-align: right;
+  }
+  .slide.right .expo {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .slide.gone {
+    opacity: 0.2;
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
   }
 }
 
@@ -316,8 +371,8 @@
   }
   .animation {
     margin: 0px;
-    width: 25vh;
-    height: 50vh;
+    width: 22vh;
+    height: 44vh;
     border-radius: 10px;
     background-color: #0C1323;
   }
@@ -326,10 +381,20 @@
   }
   .expo {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .expo h1 {
-    font-size: 40px;
-    line-height: calc(40px + 5px);
+    font-size: calc(25px * 1.3);
+    line-height: calc(25px*1.3 + 5px);
     margin-bottom: 0;
   }
   .expo h1 .italic {
@@ -341,6 +406,24 @@
     opacity: 0.7;
     margin-top: 10px;
     width: 80%;
+  }
+  .expo .button {
+    background: #0076FF;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .expo .button:hover {
+    background: #0051ff;
   }
 }
 /*# sourceMappingURL=landing.css.map */

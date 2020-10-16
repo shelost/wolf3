@@ -8,24 +8,7 @@ let Wolf =
       x="0px" y="0px" width="338.5px" height="431.5px" viewBox="0 0 338.5 431.5"
       style="overflow:visible;enable-background:new 0 0 338.5 431.5;" xml:space="preserve">
       <style type="text/css">
-        .st0 {
-          fill: #0286FF;
-        }
-        .st1 {
-          fill: #424555;
-        }
-        .st2 {
-          fill: #323545;
-        }
-        .st3 {
-          fill: #1C2232;
-        }
-        .st4 {
-          fill: #0E1625;
-        }
-        .st5 {
-          fill: #030303;
-        }
+
       </style>
       <defs>
       </defs>
@@ -82,7 +65,6 @@ let Wolf =
     </svg>
   </div>
 `
-
 
 
 // Mobile Navigation
