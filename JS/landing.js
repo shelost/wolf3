@@ -123,11 +123,14 @@ var wolfpackAnim = lottie.loadAnimation({
 
 let index, integer;
 
+let array = [0,0]
+
 const LandingLoop = () => {
 
     index = window.scrollY / window.innerHeight;
     integer = Math.floor(index);
 
+    array.push(integer)
 
     for (let i=0; i<Class('slide').length; i++){
         let slide = Class('slide')[i]
@@ -160,7 +163,6 @@ const LandingLoop = () => {
         }
     }
 
-
     // Pointer
     if (index > 0.5){
         Id('pointer').style.opacity = 0
@@ -168,6 +170,12 @@ const LandingLoop = () => {
         Id('pointer').style.opacity = 0.5
     }
 
+    if (array[array.length-1] != array[array.length-2]){
+        academyAnim.goToAndPlay(1, true)
+        wolfpackAnim.goToAndPlay(1, true)
+        portfolioAnim.goToAndPlay(1, true)
+        analysisAnim.goToAndPlay(1, true)
+    }
 
     // Dots
     if (integer < 5){
