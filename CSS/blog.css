@@ -22,7 +22,6 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     width: 35vw;
-    min-width: 600px;
     max-width: 1000px;
     margin: 10px;
     -webkit-transition: 0.2s ease;
@@ -60,7 +59,6 @@ body {
   }
   .post.featured {
     width: 72vw;
-    min-width: 1260px;
     max-width: 2000px;
   }
   .post.featured .banner {
